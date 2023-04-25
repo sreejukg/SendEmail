@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center " >
+    <form method="post">
+        <div class="p-3">
+            Enter the Message: <textarea asp-for="Message" class="w-auto"> </textarea>
+        </div>
+
+        <div>
+            <button >Click to Send Email</button>
+        </div>
+    </form>
+    <div>
+        @ViewData["ResponseMessage"]
+    </div>
+
+ 
+</div>
